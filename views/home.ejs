@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Nexionary is a web based dictionary. It provides updated english meanings and intonation">
+    <title>Nexionary</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+
+    <div class="app-container container-fluid p-0">
+
+        <div class="app-header p-2 d-flex justify-content-center align-items-center flex-column">
+
+            <nav class="app-nav container">
+                <div class="logo">Nexionary</div>
+            </nav>
+
+            <div app-language class="app-language justify-content-between container m-auto d-flex align-items-center">
+                <div class="from" app-lang-from> English </div>
+                <i class="bi bi-arrow-left-right"></i>
+                <div class="from" app-lang-to> English </div>
+            </div>
+
+            <div class="form-container" app-form-container>
+                <form app-form class="form">
+                    <div class="form-control d-flex align-items-center justify-content-between">
+                        <input type="text" class="form-input" placeholder="Type here" app-input>
+                        <button class="btn app-btn" type="button" app-button="talk">
+                            <i class="bi bi-volume-up"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="app-body">
+            <div class="container m-auto" app-body-list>
+
+            </div>
+
+           
+        </div>
+           <audio id="app-audio" app-audio></audio>
+    </div>
+
+    <script src="vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
